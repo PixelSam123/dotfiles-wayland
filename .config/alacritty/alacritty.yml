@@ -1,0 +1,14 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+
+shell:
+  program: /bin/bash
+  args:
+    - -lc
+    - "tmux attach || tmux"
+
+font:
+  normal:
+    family: Iosevka
+    style: Medium
+  size: 14

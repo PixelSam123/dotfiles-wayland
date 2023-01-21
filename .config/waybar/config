@@ -3,12 +3,16 @@
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "temperature", "network", "clock", "tray"],
+    "wlr/workspaces": {
+        "on-click": "activate"
+    },
     "hyprland/window": {
         "format": "{}",
         "separate-outputs": true
     },
     "pulseaudio": {
-        "format": "VOL {volume}%"
+        "format": "VOL {volume}%",
+        "format-muted": "VOL muted"
     },
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
